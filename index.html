@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopOkoa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <header>
+          <div class="container">
+            <div class="logo flex justify-between items-center w-44 h-24 max-w-[1240px] mx-auto px-4">
+              <img src="./img/logo.png" alt="Logo w-44 mt-1 " />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="#">Merchants</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.shopokoa.shopokoa ">Download App</a></li>
+                <li><a href="#" class="btn">Support</a></li>
+              </ul>
+            </div>
+
+            <!-- <div class="overlay"></div> -->
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>BUY NOW, PAY LATER</h1>
+                <h1>WITH SHOPOKOA</h1>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus eius distinctio odit, magni magnam qui ex perferendis
+                vitae!
+              </p>
+              <div class="cta flex gap-8">
+                <a href="#" class="btn">Buy with us</a>
+                <a href="#" class="btn">save with us</a>
+
+
+              
+              </div>
+            </div>
+
+            <div class="right animate-spin mx-12">
+              <img src="./img/phone.png" alt="Person Image" class="person " />
+            </div>
+
+            <div class="partners flex-lg-row  justify-content-lg-between ">
+              <section class="customer-logos slider">
+                  <div class="slide"><img src="./img/microsoft.png" alt="logo"></div>
+                  <div class="slide"><img src="./img/Byon8.png" alt="logo"></div>
+                  <div class="slide"><img src="./img/africa.png" alt="logo"></div>
+                
+              </section>
+          </div>
+
+          </div>
+        </div>
+
+  
+      <script>
+
+        $(document).ready(function(){
+            $('.customer-logos').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover:false,
+                responsive: [{
+                    breakpoint: 768,
+                    setting: {
+                        slidesToShow:4
+                    }
+                }, {
+                    breakpoint: 520,
+                    setting: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    
+        </script>
+  
+
+   
+      </div>
+    </main>
+
+    <footer>
+      
+      <div class="zoom">
+          <ul class="social_icon">
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+
+              <li><a href="#"><ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+
+              <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+          </ul>
+
+      </div>
+
+      <ul class="menu">
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">Terms of service</a></li>
+         
+      </ul>
+
+      <p>© Copyright 2023 ShopOkoa.com.All Rights Reserved.</p>
+
+
+  </footer>
+
+
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="./app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
